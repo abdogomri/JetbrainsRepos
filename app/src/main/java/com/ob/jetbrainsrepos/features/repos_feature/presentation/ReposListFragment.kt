@@ -1,4 +1,4 @@
-package com.ob.jetbrainsrepos
+package com.ob.jetbrainsrepos.features.repos_feature.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,12 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.ob.jetbrainsrepos.R
 import com.ob.jetbrainsrepos.databinding.FragmentFirstBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+
+@AndroidEntryPoint
+class ReposListFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
 
