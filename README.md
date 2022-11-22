@@ -12,8 +12,4 @@ Presentation Layer : contains Fragments , Adapters , Pagination , ViewModel ...
 
 Technical Stack : 
 
-DI : Hilt
-Network : Retrofit
-Pagination : Paging
-UI : XML , swiperefreshlayout
-, Flows, Coroutines
+DI : Hilt, Network : Retrofit , Pagination : Paging , UI : XML , swiperefreshlayout , Flows , Coroutines
