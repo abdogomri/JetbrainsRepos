@@ -19,7 +19,7 @@
         android:id="@+id/RepoDetailsFragment"
         android:name="com.ob.jetbrainsrepos.features.repos_feature.presentation.details.RepoDetailsFragment"
         android:label="@string/repos_details_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/repo_details_fragment">
         <argument
             android:name="repoDetails"
             app:argType="com.ob.jetbrainsrepos.features.repos_feature.domain.model.RepoInfoDetails" />
