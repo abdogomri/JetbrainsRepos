@@ -1,5 +1,7 @@
 package com.ob.jetbrainsrepos.di
 
+import com.ob.jetbrainsrepos.features.repos_feature.data.repository.JetbrainsRepositoriesRepositoryImpl
+import com.ob.jetbrainsrepos.features.repos_feature.domain.repository.JetbrainsRepositoriesRepository
 import com.ob.jetbrainsrepos.shared.data.ApiInterface
 import com.ob.jetbrainsrepos.shared.data.ApiInterfaceContainer
 import dagger.Module
@@ -16,5 +18,11 @@ object AppModule {
     fun provideOnlineApiInterface(container: ApiInterfaceContainer): ApiInterface {
         return container.provideApiInterface(false)
     }
+
+    @Provides
+    fun provideJetbrainsRepositoriesRepository(
+        api: ApiInterface
+    ): JetbrainsRepositoriesRepository = JetbrainsRepositoriesRepositoryImpl(api)
+
 
 }
