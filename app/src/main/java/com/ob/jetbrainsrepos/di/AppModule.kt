@@ -16,7 +16,7 @@ object AppModule {
 
     @Provides
     fun provideOnlineApiInterface(container: ApiInterfaceContainer): ApiInterface {
-        return container.provideApiInterface(false)
+        return container.provideApiInterface(true)
     }
 
     @Provides
