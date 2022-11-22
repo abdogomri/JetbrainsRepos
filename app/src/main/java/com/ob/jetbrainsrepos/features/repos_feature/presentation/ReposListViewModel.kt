@@ -31,5 +31,10 @@ class ReposListViewModel @Inject constructor(
                         reposData -> RepoItemUiState(reposData.toReposItemInfo()) }
             }.cachedIn(viewModelScope)
     }
+    fun onEvent(event: RepoListEvent) {
+        when(event) {
+            RepoListEvent.OnSwipeRefresh -> getReposData()
+        }
+    }
 
 }
